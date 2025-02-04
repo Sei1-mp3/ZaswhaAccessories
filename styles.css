@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+/* Navbar Transparan */
+header {
+  background-color: #ff69b4cc; /* Pink dengan transparansi 80% */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.scrolled {
+  background-color: rgba(255, 105, 180, 0.9); /* Lebih solid saat di-scroll */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.custom-shape-divider-top-1738707174 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1738707174 svg {
+  position: relative;
+  display: block;
+  width: calc(168% + 1.3px);
+  height: 348px;
+}
+
+.custom-shape-divider-top-1738707174 .shape-fill {
+  fill: #FF59B3F2;
+}
+
+/* Hero Section dengan Background Gambar Cosmetic */
+.hero {
+  background-image: url('cosmetic-bg.jpg'); /* Ganti dengan nama file gambar Anda */
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 105, 180, 0.4); /* Overlay pink transparan */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #ffffff; /* Warna putih */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efek shadow */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff1493;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff0066;
+}
+
+/* Produk Section */
+.produk {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: white; /* Background putih untuk kontras */
+}
+
+.produk h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.produk-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produk-item {
+  background-color: #ff69b4cc;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.produk-item:hover {
+  transform: translateY(-10px);
+}
+
+.produk-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produk-item h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.produk-item p {
+  font-size: 1.2rem;
+  color: #ff1493;
+  font-weight: bold;
+}
+
+.btn-beli {
+  background-color: #ff1493;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn-beli:hover {
+  background-color: #ff0066;
+}
+
+/* Tentang Kami Section */
+.tentang {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.tentang h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tentang p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Kontak Section */
+.kontak {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.kontak h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.kontak form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontak input, .kontak textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.kontak button {
+  background-color: #fff0f5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kontak button:hover {
+  background-color: #ff0066;
+}
+
+
+.custom-shape-divider-bottom-1738696171 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1738696171 svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1738696171 .shape-fill {
+  fill: #FF59B3F2;
+}
+
+footer {
+  background-color: #FF59B3F2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-media {
+  margin-bottom: 10px;
+}
+
+footer .social-media a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+  color: #ff0066;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Hero Section Animasi */
+.hero-content {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Produk Card Animasi */
+.produk-item {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Tombol Animasi */
+.btn, .btn-beli {
+  animation: pulse 2s infinite;
+}
+
+/* Footer Ikon Media Sosial Animasi */
+footer .social-media a:hover {
+  animation: spin 0.5s linear;
+}
+
+
